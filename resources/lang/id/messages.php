@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'app_name' => 'Pencarian Film',
+    'home' => 'Beranda',
+    'favorites' => 'Favorit',
+    'search' => 'Cari',
+    'placeholder_search' => 'Cari film...',
+    'hey' => 'Hai',
+    'lets_search' => 'Yuk cari film favoritmu.',
+    'no_movies_found' => 'Tidak ada film yang ditemukan.',
+    'movie_not_found' => "Film tidak ditemukan.",
+    'favorites_page_title' => ' Favorit Punya',
+    'favorites_empty' => "Belum ada film ditambahkan ke favorit.",
+    'add_fav_confirmation' => 'Tambahkan film ini ke favorit?',
+    'remove_fav_confirmation' => 'Hapus film ini dari favorit?',
+    'box_office' => 'Pendapatan',
+    'country' => 'Negara',
+    'runtime' => 'Durasi',
+    'genre' => 'Genre',
+    'director' => 'Sutradara',
+    'writers' => 'Penulis',
+    'actors' => 'Pemeran',
+    'back' => 'Kembali',
+    'add_to_fav' => 'Tambah ke Favorit',
+    'remove_to_fav' => 'Hapus dari Favorit',
+];

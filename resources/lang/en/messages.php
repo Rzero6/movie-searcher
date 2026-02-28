@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'app_name' => 'Movie Search',
+    'home' => 'Home',
+    'favorites' => 'Favorites',
+    'search' => 'Search',
+    'placeholder_search' => 'Search movie...',
+    'hey' => 'Hey',
+    'lets_search' => "Let's search some movies.",
+    'no_movies_found' => "No movies found.",
+    'movie_not_found' => "Movie not found.",
+    'favorites_page_title' => "'s Favorites",
+    'favorites_empty' => "No movie added to favorites yet.",
+    'add_fav_confirmation' => "Add this movie to favorites?",
+    'remove_fav_confirmation' => "Remove this movie from favorites?",
+    'box_office' => 'Box Office',
+    'country' => 'Country',
+    'runtime' => 'Runtime',
+    'genre' => 'Genre',
+    'director' => 'Director',
+    'writers' => 'Writers',
+    'actors' => 'Actors',
+    'back' => 'Go Back',
+    'add_to_fav' => 'Add to Favorites',
+    'remove_to_fav' => 'Remove from Favorites',
+];
