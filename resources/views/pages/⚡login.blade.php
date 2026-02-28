@@ -15,7 +15,7 @@ new class extends Component {
         ]);
 
         if (!Auth::attempt(['username' => $this->username, 'password' => $this->password])) {
-            $this->addError('username', 'Invalid username or password.');
+            $this->addError('username', __('auth.invalid_login'));
             return;
         }
 
@@ -38,12 +38,14 @@ new class extends Component {
             <p class="text-center text-muted small mb-4">{{ __('auth.username') }}/{{ __('auth.password') }}:
                 aldmic/123abc123</p>
 
+            <div class="my-2 w-full d-flex align-items-center justify-content-center">
+                <livewire:language-switcher />
+            </div>
+
             @if ($errors->any())
                 <div class="alert alert-danger py-2">{{ $errors->first() }}</div>
             @endif
-            <div class="w-full d-flex align-items-center justify-content-center">
-                <livewire:language-switcher />
-            </div>
+
             <div class="mb-3">
                 <label class="form-label">{{ __('auth.username') }}</label>
                 <input type="text" wire:model="username" class="form-control @error('username') is-invalid @enderror"

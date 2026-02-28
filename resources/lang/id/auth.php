@@ -8,4 +8,5 @@ return [
     'logout_confirm' => 'Apakah yakin ingin keluar?',
     'enter_user' => 'Masukan Nama Pengguna',
     'enter_pass' => 'Masukan Kata Sandi',
+    'invalid_login' => 'Nama pengguna atau kata sandi salah',
 ];
