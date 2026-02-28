@@ -14,7 +14,7 @@ A Laravel-based web application for searching movies using the OMDb API. Provide
 
 ## 🛠️ Prerequisites
 
-- PHP 8.1 or higher
+- PHP 8.2 or higher
 - Composer
 - Node.js & npm (for frontend assets)
 - MySQL or another supported database
