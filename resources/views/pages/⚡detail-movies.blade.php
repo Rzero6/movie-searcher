@@ -66,7 +66,8 @@ new class extends Component {
             {{-- Poster --}}
             <div class="col-md-4 text-center">
                 <img src="{{ $movie['Poster'] !== 'N/A' ? $movie['Poster'] : 'https://placehold.co/320x480?text=No+Image' }}"
-                    alt="{{ $movie['Title'] }} Poster" class="w-100 rounded mb-3">
+                    alt="{{ $movie['Title'] }} Poster" class="w-100 rounded mb-3"
+                    onerror="this.src='https://placehold.co/320x480?text=No+Image'">
             </div>
 
             {{-- Movie Details --}}
@@ -108,8 +109,7 @@ new class extends Component {
                 <div class="mt-auto d-flex justify-content-end gap-2">
                     @if ($isFavorite)
                         <button wire:click="remove" class="btn btn-danger mt-3"
-                            wire:confirm="{{__('messages.remove_fav_confirmation')}}"
-                            wire:loading.attr="disabled">
+                            wire:confirm="{{ __('messages.remove_fav_confirmation') }}" wire:loading.attr="disabled">
                             <span wire:loading wire:target="remove"
                                 class="spinner-border spinner-border-sm me-1"></span>
                             <i class="bi bi-heartbreak-fill" wire:loading.remove wire:target="remove"></i>
@@ -117,8 +117,7 @@ new class extends Component {
                         </button>
                     @else
                         <button wire:click="store" class="btn btn-primary mt-3"
-                            wire:confirm="{{__('messages.add_fav_confirmation')}}"
-                            wire:loading.attr="disabled">
+                            wire:confirm="{{ __('messages.add_fav_confirmation') }}" wire:loading.attr="disabled">
                             <span wire:loading wire:target="store" class="spinner-border spinner-border-sm me-1"></span>
                             <i class="bi bi-heart-fill" wire:loading.remove wire:target="store"></i>
                             {{ __('messages.add_to_fav') }}

@@ -49,7 +49,7 @@ new class extends Component {
             <div class="mb-3">
                 <label class="form-label">{{ __('auth.username') }}</label>
                 <input type="text" wire:model="username" class="form-control @error('username') is-invalid @enderror"
-                    placeholder={{__('auth.enter_user')}} autofocus>
+                    placeholder="{{__('auth.enter_user')}}" autofocus>
             </div>
 
             <div class="mb-3">
