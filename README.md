@@ -2,6 +2,14 @@
 
 A Laravel-based web application for searching movies using the OMDb API. Provides user authentication, favorite movies management, caching, localization, and a modern UI built with Livewire.
 
+## 📸 Screenshot
+
+> - ![Home page](app%20screenshot/home%20page.png)
+> - ![Search result page](app%20screenshot/search%20result%20page.png)
+> - ![Favorites page](app%20screenshot/favorites%20page.png)
+> - ![Login page](app%20screenshot/login%20page.png)
+> - ![Detail page](app%20screenshot/detail%20page.png)
+
 ## ✅ Features
 
 - **OMDb API Integration**: Search for movie information using the OMDb API.
@@ -104,5 +112,3 @@ The OMDb search results are cached using Laravel's cache system. You can configu
 This project is open-sourced under the [MIT license](LICENSE).
 
 ---
-
-Happy coding! 🎬
